@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vergel Divina | Portfolio</title>
+    <style>
+        :root {
+            --primary: #d4af37;
+            /* gold */
+            --secondary: #1a1a40;
+            /* navy */
+            --bg: #ffffff;
+            /* white */
+            --text: #333;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav a {
+            color: var(--primary);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--bg);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 6px solid var(--primary);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: scale(1.03);
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid var(--secondary);
+            border-radius: 5px;
+        }
+
+        form button {
+            background: var(--primary);
+            color: var(--secondary);
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vergel Divina</h1>
+        <p>Aspiring Software Developer | Data Analyst | Tech Enthusiast</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="images/vergel.jpg" alt="Profile picture">
+        <p>Hello! I’m <strong>Vergel</strong>, passionate about web development, cloud computing, and data analytics.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Thermometer Converter</h3>
+                <p>Web-based tool converting Celsius ↔ Fahrenheit.</p>
+            </div>
+            <div class="project">
+                <h3>Data Analysis</h3>
+                <p>Python + Pandas project analyzing datasets.</p>
+            </div>
+            <div class="project">
+                <h3>AWS Cloud Quest</h3>
+                <p>NoSQL cloud database deployment with AWS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: <strong>yourname@email.com</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vergel Divina. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
